@@ -1,0 +1,6 @@
+[server]
+bind_addr = "0.0.0.0:2333" # Control port for the HP t620 client to connect
+
+[server.services.model-server]
+token = "YOUR_SHARED_SECRET_TOKEN" # Secret token (must match client.toml)
+bind_addr = "0.0.0.0:11434"        # Publicly exposes the Ollama API on port 11434
