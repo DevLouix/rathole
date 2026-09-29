@@ -1,0 +1,6 @@
+[client]
+remote_addr = "YOUR_VPS_PUBLIC_IP:2333"
+
+[client.services.model-server]
+token = "YOUR_SHARED_SECRET_TOKEN"   # Must match token in VPS server.toml
+local_addr = "127.0.0.1:11434"        # Forwards traffic to Ollama running on host port
