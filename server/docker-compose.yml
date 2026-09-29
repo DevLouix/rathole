@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  rathole-server:
+    image: rapiz1/rathole:v0.4.7
+    container_name: rathole-server
+    restart: unless-stopped
+    network_mode: host
+    command: ["--server", "/app/server.toml"]
+    volumes:
+      - ./server.toml:/app/server.toml
